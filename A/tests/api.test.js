@@ -1,7 +1,7 @@
 const request = require("supertest");
 const http = require("http");
 const { getAllEmployees } = require("../controllers");
-const { app } = require("../index");
+const { app } = require("../index.js");
 
 jest.mock("../controllers", () => ({
   ...jest.requireActual("../controllers"),
